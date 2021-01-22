@@ -27,6 +27,7 @@ public:
     ModeDialog(QWidget* parent) :  QDialog(parent)
     {
         auto prompt = new QLabel("Here is the prompt text, quite a long description blah blah blah");
+        prompt->setWordWrap(true);
         auto short_button = new QRadioButton("Short option");
         auto long_button = new QRadioButton("Long option with quite a lot of words that take up more than one line");
 
