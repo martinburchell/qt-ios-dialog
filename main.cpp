@@ -39,7 +39,7 @@ public:
         mainlayout->addWidget(prompt);
         mainlayout->addWidget(short_button);
         mainlayout->addWidget(long_button);
-        mainlayout->setAlignment(Qt::AlignLeft | Qt::AlignTop);
+        mainlayout->addStretch(1);
 
         setLayout(mainlayout);
 
